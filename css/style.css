@@ -1,0 +1,38 @@
+/*ローディング画面*/
+#loading {
+  transition: all 1s;
+  background-color: #ddd;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: grid;
+  place-items: cener;
+}
+
+.loaded {
+  opacity: 0;
+  /*https://developer.mozilla.org/ja/docs/Web/CSS/opacity*/
+  /*透明度*/
+  visibility: hidden;
+}
+
+.spinner {
+  width: 200px;
+  height: 200px;
+}
+
+/*コンテンツ部分*/
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*https://developer.mozilla.org/ja/docs/Web/CSS/grid-template-columns*/
+}
+
+img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  /*https://developer.mozilla.org/ja/docs/Web/CSS/object-fit*/
+  /*コンテナに画像をどうはめ込むかを設定する*/
+}
