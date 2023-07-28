@@ -17,3 +17,8 @@ body {
 #count {
   font-size: 1.5rem;
 }
+
+/*4-9*/
+.alert {
+  color: #f66;
+}
