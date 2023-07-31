@@ -1,6 +1,8 @@
 const getScrollPercent = () => {
+  // console.log('スクロールされました');
   // スクロール量
   const scrolled = window.scrolly;
+  // console.log(`${scrolled} スクロールされました`);
 
   // ページ全体の高さ
   const pageHeight = document.documentElement.scrollHeight;
